@@ -1,0 +1,11 @@
+{
+    "env": {
+        "VITE_API_URL": "https://fashi-master-backend.vercel.app"
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
