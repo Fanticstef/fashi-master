@@ -1,0 +1,151 @@
+/* index.css */
+@import 'owl.carousel/dist/assets/owl.carousel.css';
+@import 'owl.carousel/dist/assets/owl.theme.default.css';
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+/* ---- custom css start ---- */
+
+
+/* product update image remove start */
+.image-hover-wrapper {
+    transition: background-color 0.3s ease;
+}
+
+.hover-img {
+    transition: filter 0.3s ease;
+}
+
+.image-hover-wrapper:hover {
+    background-color: rgba(0, 0, 255, 0.4);
+    /* blue with black overlay feel */
+    border-radius: 0.25rem;
+}
+
+.image-hover-wrapper:hover .hover-img {
+    filter: brightness(0.6);
+    /* darken the image */
+}
+
+.image-close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: none;
+    z-index: 2;
+    padding: 0.15rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.image-hover-wrapper:hover .image-close-btn {
+    display: block;
+}
+
+/* product update image remove end */
+
+
+/* react-slick css start */
+
+.slick-slide {
+    margin-right: 15px;
+}
+
+.slick-track {
+    display: flex;
+}
+
+/* react-slick css end */
+
+
+/* loader css start */
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #999;
+}
+
+/* loader css end */
+
+
+/* pagination style start */
+
+/* Your custom class with a high specificity to override Bootstrap */
+.custom-pagination .page-item.active .page-link {
+    background-color: #e7ab3c;
+    border-color: #e7ab3c;
+}
+
+/* pagination style end */
+
+
+/* product page start */
+.shop-brand-list {
+    cursor: pointer;
+}
+
+.shop-brand-list:hover.active {
+    color: #e7ab3c;
+}
+
+/* product page end */
+
+
+/* icon size start  */
+.icon-big-size {
+    font-size: 6rem;
+}
+
+/* icon size end  */
+
+/* --------- 
+ErrorPage
+ ----------- */
+
+.custom-padding {
+    padding: 7rem 0;
+}
+
+/* Remove dropdown caret from any element with .no-caret */
+.no-caret::after {
+    display: none !important;
+}
+
+.mini-add-to-cart {
+    font-size: 16px;
+    font-weight: 700;
+    /* color: #252525; */
+    display: block;
+    padding: 16px 18px 12px 19px;
+    background: #e7ab3c;
+    color: #ffffff;
+    border: none;
+}
+
+.delete-wishlist {
+    color: red;
+    cursor: pointer;
+}
+
+.delete-wishlist:hover {
+    color: brown;
+    transition: all ease-in-out .5s;
+}
+
+/* .delivery-circle {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 50%;
+} */
+
+/* --------- 
+ErrorPage
+ ----------- */
+
+
+/* ---- custom css end ---- */
