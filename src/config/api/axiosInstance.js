@@ -1,8 +1,11 @@
 import axios from 'axios'
 
 const axiosInstance = axios.create({
-    baseURL: 'https://fashi-master-backend.vercel.app',
-    timeout: 10000,
+    baseURL: import.meta.env.VITE_API_BASE_URL,
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    withCredentials: true
 });
 
 // add token then axios Interceptor
