@@ -83,7 +83,7 @@ const UpdateBrand = () => {
                                 {brand.pic && (
                                     <div className="mt-2">
                                         <img
-                                            src={`${import.meta.env.VITE_API_URL}/${brand.pic}`}
+                                            src={`${import.meta.env.VITE_API_BASE_URL}/${brand.pic}`}
                                             alt={brand.name}
                                             width={60}
                                             height={60}

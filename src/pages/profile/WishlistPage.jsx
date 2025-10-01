@@ -54,7 +54,7 @@ const WishlistPage = () => {
                                         <tr key={wish._id}>
                                             <td className="cart-pic first-row">
                                                 <img
-                                                    src={`${import.meta.env.VITE_API_URL}/${wish?.product?.pic[0]}`}
+                                                    src={`${import.meta.env.VITE_API_BASE_URL}/${wish?.product?.pic[0]}`}
                                                     alt={wish?.product?.name}
                                                     width={90} />
                                             </td>

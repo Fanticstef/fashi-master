@@ -40,7 +40,7 @@ const ProductDetails = () => {
     }
 
     // slide others images
-    const API_URL = import.meta.env.VITE_API_URL;
+    const API_URL = import.meta.env.VITE_API_BASE_URL;
 
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);

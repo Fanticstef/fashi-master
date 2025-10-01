@@ -58,7 +58,7 @@ const ManBanner = ({ data, isLoading }) => {
                                     <div key={item._id} className="product-item">
                                         <div className="pi-pic">
                                             <img
-                                                src={`${import.meta.env.VITE_API_URL}/${item.pic[0]}`}
+                                                src={`${import.meta.env.VITE_API_BASE_URL}/${item.pic[0]}`}
                                                 width={260}
                                                 height={360}
                                                 alt={item.name}

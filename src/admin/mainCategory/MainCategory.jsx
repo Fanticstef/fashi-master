@@ -72,9 +72,9 @@ const MainCategory = () => {
                                                     <td>{idx + 1}</td>
                                                     <td>{mainCategory.name}</td>
                                                     <td>
-                                                        <Link to={`${import.meta.env.VITE_API_URL}/${mainCategory.pic}`} target="_blank">
+                                                        <Link to={`${import.meta.env.VITE_API_BASE_URL}/${mainCategory.pic}`} target="_blank">
                                                             <img
-                                                                src={`${import.meta.env.VITE_API_URL}/${mainCategory.pic}`}
+                                                                src={`${import.meta.env.VITE_API_BASE_URL}/${mainCategory.pic}`}
                                                                 alt={mainCategory.name}
                                                                 width={60}
                                                                 height={60} />

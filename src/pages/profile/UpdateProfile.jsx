@@ -69,7 +69,7 @@ const UpdateProfile = () => {
                             <div className="border rounded-2 p-2">
                                 <div className="mb-2">
                                     <img
-                                        src={`${import.meta.env.VITE_API_URL}/${user.pic}`}
+                                        src={`${import.meta.env.VITE_API_BASE_URL}/${user.pic}`}
                                         className="img-fluid img-thumbnail"
                                         alt="profile" />
                                 </div>

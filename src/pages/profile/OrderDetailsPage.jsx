@@ -36,7 +36,7 @@ const OrderDetailsPage = () => {
                                             <h5 className="fw-bolder">&#8377;{orderDetails?.products[0].product?.finalPrice || '-'}</h5>
                                         </div>
                                         <img
-                                            src={`${import.meta.env.VITE_API_URL}/${orderDetails?.products[0].product?.pic[0]}`}
+                                            src={`${import.meta.env.VITE_API_BASE_URL}/${orderDetails?.products[0].product?.pic[0]}`}
                                             alt={orderDetails?.products[0].product?.name}
                                             width={90} />
                                     </div>

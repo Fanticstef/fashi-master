@@ -117,9 +117,9 @@ const Brand = () => {
                                                 <td>{startIndex + idx + 1}</td>
                                                 <td>{brand.name}</td>
                                                 <td>
-                                                    <Link to={`${import.meta.env.VITE_API_URL}/${brand.pic}`} target="_blank">
+                                                    <Link to={`${import.meta.env.VITE_API_BASE_URL}/${brand.pic}`} target="_blank">
                                                         <img
-                                                            src={`${import.meta.env.VITE_API_URL}/${brand.pic}`}
+                                                            src={`${import.meta.env.VITE_API_BASE_URL}/${brand.pic}`}
                                                             alt={brand.name}
                                                             width={60}
                                                             height={60} />

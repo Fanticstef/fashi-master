@@ -87,7 +87,7 @@ const UpdateMainCategory = () => {
                                 {mainCategory.pic && (
                                     <div className="mt-2">
                                         <img
-                                            src={`${import.meta.env.VITE_API_URL}/${mainCategory.pic}`}
+                                            src={`${import.meta.env.VITE_API_BASE_URL}/${mainCategory.pic}`}
                                             alt={mainCategory.name}
                                             width={60}
                                             height={60}

@@ -115,9 +115,9 @@ const SubCategory = () => {
                                                     <td>{startIndex + idx + 1}</td>
                                                     <td>{subCategory.name}</td>
                                                     <td>
-                                                        <Link to={`${import.meta.env.VITE_API_URL}/${subCategory.pic}`} target="_blank">
+                                                        <Link to={`${import.meta.env.VITE_API_BASE_URL}/${subCategory.pic}`} target="_blank">
                                                             <img
-                                                                src={`${import.meta.env.VITE_API_URL}/${subCategory.pic}`}
+                                                                src={`${import.meta.env.VITE_API_BASE_URL}/${subCategory.pic}`}
                                                                 alt={subCategory.name}
                                                                 width={60}
                                                                 height={60} />

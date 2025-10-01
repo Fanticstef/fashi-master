@@ -67,7 +67,7 @@ const Details = ({ register, errors, isUpdate, lastImg, productId }) => {
                             {lastImg?.map((img, i) => (
                                 <div key={i} className="position-relative image-hover-wrapper">
                                     <img
-                                        src={`${import.meta.env.VITE_API_URL}/${img}`}
+                                        src={`${import.meta.env.VITE_API_BASE_URL}/${img}`}
                                         alt={`product ${i + 1}`}
                                         width={60}
                                         height={60}

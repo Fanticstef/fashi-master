@@ -37,7 +37,7 @@ const OrderPage = () => {
                                             <td className="first-row" style={{ width: '7%' }}>
                                                 <Link to={`/order/${order._id}`}>
                                                     <img
-                                                        src={`${import.meta.env.VITE_API_URL}/${order?.products[0].product?.pic[0]}`}
+                                                        src={`${import.meta.env.VITE_API_BASE_URL}/${order?.products[0].product?.pic[0]}`}
                                                         alt={order?.products[0].product?.name}
                                                         width={90} />
                                                 </Link>

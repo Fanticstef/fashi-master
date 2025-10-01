@@ -83,7 +83,7 @@ const UpdateSubCategory = () => {
                                     {subCategory.pic && (
                                         <div className="mt-2">
                                             <img
-                                                src={`${import.meta.env.VITE_API_URL}/${subCategory.pic}`}
+                                                src={`${import.meta.env.VITE_API_BASE_URL}/${subCategory.pic}`}
                                                 alt={subCategory.name}
                                                 width={60}
                                                 height={60}

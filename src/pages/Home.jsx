@@ -34,7 +34,7 @@ const Home = () => {
                                     <Link to={`/product?category=${mainCategory._id}`}>
                                         <div className="single-banner">
                                             <img
-                                                src={`${import.meta.env.VITE_API_URL}/${mainCategory.pic}`}
+                                                src={`${import.meta.env.VITE_API_BASE_URL}/${mainCategory.pic}`}
                                                 alt={mainCategory.name} />
                                             <div className="inner-text">
                                                 <h4>{mainCategory.name}</h4>

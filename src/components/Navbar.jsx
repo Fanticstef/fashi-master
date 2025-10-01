@@ -141,7 +141,7 @@ const Navbar = () => {
                                                                 <tr key={cart._id}>
                                                                     <td className="si-pic">
                                                                         <img
-                                                                            src={`${import.meta.env.VITE_API_URL}/${cart?.product?.pic[0]}`}
+                                                                            src={`${import.meta.env.VITE_API_BASE_URL}/${cart?.product?.pic[0]}`}
                                                                             alt={cart?.product?.name}
                                                                             width={80} />
                                                                     </td>

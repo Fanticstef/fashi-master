@@ -140,9 +140,9 @@ const Product = () => {
                                                         {product.pic.slice(0, 3)?.map((item, i) => (
                                                             <Link
                                                                 key={i}
-                                                                to={`${import.meta.env.VITE_API_URL}/${item}`} target="_blank">
+                                                                to={`${import.meta.env.VITE_API_BASE_URL}/${item}`} target="_blank">
                                                                 <img
-                                                                    src={`${import.meta.env.VITE_API_URL}/${item}`}
+                                                                    src={`${import.meta.env.VITE_API_BASE_URL}/${item}`}
                                                                     alt={product.name + (i + 1)}
                                                                     width={60}
                                                                     height={60} />

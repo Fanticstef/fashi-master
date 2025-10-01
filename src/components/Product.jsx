@@ -195,7 +195,7 @@ const Product = ({ products }) => {
                                         <div className="product-item">
                                             <div className="pi-pic">
                                                 <img
-                                                    src={`${import.meta.env.VITE_API_URL}/${product.pic[0]}`}
+                                                    src={`${import.meta.env.VITE_API_BASE_URL}/${product.pic[0]}`}
                                                     width={260}
                                                     height={360}
                                                     alt={product.name} />
