@@ -8,6 +8,7 @@ import { CartSagas } from "./sagas/cartSaga";
 import { wishlistSaga } from "./sagas/wishlistSaga";
 import { checkoutSaga } from "./sagas/checkoutSaga";
 import { newsLetterSagas } from "./sagas/newsLetterSaga";
+import { contactSagas } from "./sagas/contactSaga";
 
 
 export default function* rootSaga() {
@@ -21,5 +22,6 @@ export default function* rootSaga() {
         wishlistSaga(),
         checkoutSaga(),
         newsLetterSagas(),
+        contactSagas(),
     ])
 }

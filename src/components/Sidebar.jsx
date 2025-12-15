@@ -1,5 +1,7 @@
 import { FaHome, FaListUl, FaUsers, FaCog, FaRegNewspaper } from "react-icons/fa";
 import { AiFillProduct } from "react-icons/ai";
+import { RiContactsBook3Fill } from "react-icons/ri";
+import { MdOutlineShoppingCartCheckout } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 
@@ -32,16 +34,16 @@ const Sidebar = () => {
                         <FaRegNewspaper className="me-3 fs-4" />
                         Newsletter
                     </Link>
-                    <Link to="/settings" className="list-group-item list-group-item-action bg-light fw-bold">
-                        <FaCog className="me-3 fs-4" />
+                    <Link to="/admin/contact-us" className="list-group-item list-group-item-action bg-light fw-bold">
+                        <RiContactsBook3Fill className="me-3 fs-4" />
                         Contact Us
                     </Link>
                     <Link to="/admin/user" className="list-group-item list-group-item-action bg-light fw-bold">
                         <FaUsers className="me-3 fs-4" />
                         User
                     </Link>
-                    <Link to="/settings" className="list-group-item list-group-item-action bg-light fw-bold">
-                        <FaCog className="me-3 fs-4" />
+                    <Link to="/admin/checkout" className="list-group-item list-group-item-action bg-light fw-bold">
+                        <MdOutlineShoppingCartCheckout className="me-3 fs-4" />
                         Checkout
                     </Link>
                 </div>

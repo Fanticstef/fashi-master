@@ -36,6 +36,8 @@ import OrderPage from "./pages/profile/OrderPage"
 import OrderDetailsPage from "./pages/profile/OrderDetailsPage"
 import NewsLetter from "./admin/newsLetter/NewsLetter"
 import UpdateNewsLetter from "./admin/newsLetter/UpdateNewsLetter"
+import ContactUs from "./admin/contactUs/ContactUs"
+import Checkout from "./admin/checkout/Checkout"
 
 
 
@@ -86,6 +88,10 @@ function App() {
             <Route path="/admin/news-letter/update/:_id" element={<UpdateNewsLetter />} />
 
             <Route path="/admin/user" element={<User />} />
+
+            <Route path="/admin/contact-us" element={<ContactUs />} />
+
+            <Route path="/admin/checkout" element={<Checkout />} />
           </>
         )}
         <Route path="*" element={<PageNotFound />} />

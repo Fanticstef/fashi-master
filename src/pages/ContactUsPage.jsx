@@ -1,6 +1,20 @@
+import { useForm } from "react-hook-form"
 import Breadcrumb from "../components/Breadcrumb"
+import { useDispatch } from "react-redux"
+import { createContactRequest } from "../redux/slice/contact/contactSlice"
+
 
 const ContactUsPage = () => {
+    const dispatch = useDispatch()
+
+    const { register, handleSubmit, formState: { errors }, reset } = useForm()
+
+    const onSubmit = (data) => {
+        // Here you would typically dispatch an action to send the data to your backend
+        dispatch(createContactRequest(data))
+        reset()
+    }
+
     return (
         <>
             <Breadcrumb />
@@ -49,16 +63,33 @@ const ContactUsPage = () => {
                                 <div className="leave-comment">
                                     <h4>Leave A Comment</h4>
                                     <p>Our staff will call back later and answer your questions.</p>
-                                    <form action="#" className="comment-form">
+                                    <form onSubmit={handleSubmit(onSubmit)} className="comment-form">
                                         <div className="row">
                                             <div className="col-lg-6">
-                                                <input type="text" placeholder="Your name" />
+                                                <input
+                                                    type="text"
+                                                    placeholder="Your name"
+                                                    className={`${errors.name ? 'mb-0 border-danger' : ''}`}
+                                                    {...register('name', { required: 'Name is required' })} />
+                                                {errors.name && <p className="text-danger">{errors.name.message}</p>}
                                             </div>
                                             <div className="col-lg-6">
-                                                <input type="text" placeholder="Your email" />
+                                                <input
+                                                    type="email"
+                                                    placeholder="Your email"
+                                                    className={`${errors.email ? 'mb-0 border-danger' : ''}`}
+                                                    {...register('email', {
+                                                        required: 'Email is required',
+                                                        pattern: {
+                                                            value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                                                            message: "Enter a valid email address",
+                                                        }
+                                                    })} />
+                                                {errors.email && <p className="text-danger">{errors.email.message}</p>}
                                             </div>
                                             <div className="col-lg-12">
-                                                <textarea placeholder="Your message"></textarea>
+                                                <textarea placeholder="Your message" className={`${errors.message ? 'mb-0 border-danger' : ''}`} {...register('message', { required: 'Message is required' })}></textarea>
+                                                {errors.message && <p className="text-danger">{errors.message.message}</p>}
                                                 <button type="submit" className="site-btn">Send message</button>
                                             </div>
                                         </div>

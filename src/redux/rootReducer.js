@@ -9,6 +9,7 @@ import CartReducer from "./slice/cart/cartSlice";
 import WishlistReducer from "./slice/wishlist/wishlistSlice";
 import CheckoutReducer from "./slice/checkout/checkoutSlice";
 import NewsLetterReducer from "./slice/newsLetter/newsLetterSlice";
+import contactReducer from "./slice/contact/contactSlice";
 
 
 const rootReducer = combineReducers({
@@ -21,6 +22,7 @@ const rootReducer = combineReducers({
     wishlist: WishlistReducer,
     checkout: CheckoutReducer,
     newsLetter: NewsLetterReducer,
+    contact: contactReducer,
 })
 
 export default rootReducer
